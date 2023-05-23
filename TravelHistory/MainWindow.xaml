@@ -1,0 +1,57 @@
+﻿<Window x:Class="TravelHistory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelHistory"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Height="734" Width="516" Background="#EBF7F9" WindowStyle="None">
+    <Grid Height="734" Width="516">
+        <Button x:Name="login_button" Content="Вход" Width="194" Height="50" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="161,538,161,130">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="26"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="login_label" Margin="120,203,120,467" Content="Авторизация" FontFamily="Open Sans" FontSize="40" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
+        <TextBox x:Name="loginpage_login_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,326,46,355" FontSize="24" FontFamily="open sans" Padding="15px">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="26"></Setter>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="4"
+                      Direction="305"
+                      Color="Black"
+                      Opacity="0.5"
+                      BlurRadius="18"/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBox x:Name="loginpage_password_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,442,46,239" FontSize="24" FontFamily="open sans" Padding="15px">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="26"></Setter>
+                </Style>
+            </TextBox.Resources>
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="4"
+                      Direction="305"
+                      Color="Black"
+                      Opacity="0.5"
+                      BlurRadius="18"/>
+            </TextBox.Effect>
+        </TextBox>
+        <Button x:Name="loginpage_close_button" Content="x" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="458,0,0,693" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="32" Click="Loginpage_close_button_click" RenderTransformOrigin="1.141,0.945" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="26"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Image HorizontalAlignment="Center" Height="131" Margin="0,49,0,0" VerticalAlignment="Top" Width="124" Source="/login_image.png"/>
+        <Label x:Name="register_label" Content="Нет аккаунта? Зарегистрироваться" HorizontalAlignment="Center" Margin="0,677,0,0" FontFamily="Open Sans" Foreground="#FF909090" RenderTransformOrigin="0.508,1.525" Height="24" VerticalAlignment="Top"  MouseDown="Registration_window_open"/>
+    </Grid>
+</Window>
