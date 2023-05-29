@@ -6,22 +6,18 @@
         xmlns:local="clr-namespace:TravelHistory"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Height="800" Width="516" Background="#EBF7F9"  WindowStyle="None">
-    <Grid Height="800" Width="516" Margin="0,0,0,-16">
-        <Button x:Name="registrationpage_close_button" Content="x" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="438,0,0,759" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="32" Click="Registrationpage_close_button_click" >
+        Height="830" Width="516" Background="#EBF7F9"  WindowStyle="None">
+    <Grid Width="516" Height="830">
+        <Button x:Name="registrationpage_close_button" Content="x" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="20" Foreground="white" BorderThickness="0" Margin="438,0,0,758" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="32" Click="Registrationpage_close_button_click" RenderTransformOrigin="0.497,-1.766" Height="32" >
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="26"></Setter>
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="registration_label" Margin="128,44,128,700" Content="Регистрация" FontFamily="Open Sans" FontSize="40" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
-        <TextBox x:Name="registrationpage_firstname_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,134,46,613" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </TextBox.Resources>
+        <Label x:Name="registration_label" Margin="159,10,126,741" Content="Регистрация" FontFamily="Open Sans" FontSize="36" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
+        <Label Content="Имя" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="43,79,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="registrationpage_firstname_textbox" Foreground="#303030" Height="53" BorderThickness="0" Margin="46,98,46,649" FontSize="20" FontFamily="open sans" Padding="15px">
             <TextBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
@@ -30,12 +26,8 @@
                       BlurRadius="18"/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="registrationpage_lastname_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,233,46,514" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </TextBox.Resources>
+        <Label Content="Фамилия" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="39,180,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="registrationpage_lastname_textbox" Foreground="#303030" Height="53" BorderThickness="0" Margin="46,199,46,548" FontSize="20" FontFamily="open sans" Padding="15px">
             <TextBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
@@ -44,12 +36,8 @@
                       BlurRadius="18"/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="registrationpage_login_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,334,46,413" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </TextBox.Resources>
+        <Label Content="Логин" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="39,285,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="registrationpage_login_textbox" Foreground="#303030" Height="53" BorderThickness="0" Margin="43,309,49,438" FontSize="20" FontFamily="open sans" Padding="15px">
             <TextBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
@@ -58,41 +46,51 @@
                       BlurRadius="18"/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="registrationpage_password_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,436,46,311" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.Effect>
+        <Label Content="Пароль" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="39,396,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="registrationpage_password_textbox" Foreground="#303030" PasswordChar="●" Height="53" Width="424" BorderThickness="0" Margin="46,415,46,332" FontSize="20" FontFamily="open sans" Padding="15px">
+            <PasswordBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
                       Color="Black"
                       Opacity="0.5"
                       BlurRadius="18"/>
-            </TextBox.Effect>
-        </TextBox>
-        <TextBox x:Name="registrationpage_confpass_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,547,46,200" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
+            </PasswordBox.Effect>
+        </PasswordBox>
+        <Label Content="Повтор пароля" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="39,507,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="registrationpage_confpass_textbox" Foreground="#303030" PasswordChar="●" Height="53" Width="424" BorderThickness="0" Margin="43,541,49,236" FontSize="20" FontFamily="open sans" Padding="15px">
+            <PasswordBox.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="26"></Setter>
                 </Style>
-            </TextBox.Resources>
-            <TextBox.Effect>
+            </PasswordBox.Resources>
+            <PasswordBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
                       Color="Black"
                       Opacity="0.5"
                       BlurRadius="18"/>
+            </PasswordBox.Effect>
+        </PasswordBox>
+        <Label Content="Почта" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="43,613,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="registrationpage_email_textbox" Foreground="#303030" Height="53" Width="424" BorderThickness="0" Margin="46,647,46,130" FontSize="20" FontFamily="open sans" Padding="15px">
+            <TextBox.Effect>
+                <DropShadowEffect ShadowDepth="4"
+                    Direction="305"
+                    Color="Black"
+                    Opacity="0.5"
+                    BlurRadius="18"/>
             </TextBox.Effect>
         </TextBox>
-        <Button x:Name="register_button" Content="Зарегистрироваться" Height="53" Width="424" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="46,643,46,104">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Label x:Name="register_label" Content="Уже есть аккаунт? Войти" HorizontalAlignment="Center" Margin="0,718,0,0" FontFamily="Open Sans" Foreground="#FF909090" RenderTransformOrigin="0.508,1.525" Height="24" VerticalAlignment="Top"  MouseDown="Login_window_open"></Label>
+        <Button x:Name="register_button" Content="Зарегистрироваться" Height="53" Width="424" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="20" Foreground="white" BorderThickness="0" Margin="46,724,46,53" Click="register_button_Click"/>
+        <Label x:Name="register_label" Content="Уже есть аккаунт? Войти" HorizontalAlignment="Left" Margin="172,793,0,0" FontFamily="Open Sans" Foreground="#FF909090" RenderTransformOrigin="0.508,1.525" Height="24" VerticalAlignment="Top"  MouseDown="Login_window_open">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.643"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="1.689"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </Window>

@@ -8,20 +8,9 @@
         WindowStartupLocation="CenterScreen"
         Height="734" Width="516" Background="#EBF7F9" WindowStyle="None">
     <Grid Height="734" Width="516">
-        <Button x:Name="login_button" Content="Вход" Width="194" Height="50" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="161,538,161,130">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Label x:Name="login_label" Margin="120,203,120,467" Content="Авторизация" FontFamily="Open Sans" FontSize="40" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
-        <TextBox x:Name="loginpage_login_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,326,46,355" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </TextBox.Resources>
+        <Button x:Name="login_button" Content="Вход" Height="50" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="38,571,46,113" Click="login_button_Click"/>
+        <Label x:Name="signin_label" Margin="120,203,120,467" Content="Авторизация" FontFamily="Open Sans" FontSize="40" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
+        <TextBox x:Name="loginpage_login_textbox" Foreground="#303030" Height="53" Width="424" BorderThickness="0" Margin="46,326,46,355" FontSize="24" FontFamily="open sans" Padding="15px">
             <TextBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
@@ -30,20 +19,15 @@
                       BlurRadius="18"/>
             </TextBox.Effect>
         </TextBox>
-        <TextBox x:Name="loginpage_password_textbox" Height="53" Width="424" BorderThickness="0" Margin="46,442,46,239" FontSize="24" FontFamily="open sans" Padding="15px">
-            <TextBox.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="26"></Setter>
-                </Style>
-            </TextBox.Resources>
-            <TextBox.Effect>
+        <PasswordBox x:Name="loginpage_password_textbox" Foreground="#303030" PasswordChar="●" Height="53" Width="424" BorderThickness="0" Margin="46,442,46,239" FontSize="24" FontFamily="open sans" Padding="15px">
+            <PasswordBox.Effect>
                 <DropShadowEffect ShadowDepth="4"
                       Direction="305"
                       Color="Black"
                       Opacity="0.5"
                       BlurRadius="18"/>
-            </TextBox.Effect>
-        </TextBox>
+            </PasswordBox.Effect>
+        </PasswordBox>
         <Button x:Name="loginpage_close_button" Content="x" Background="#FFCDA7DB" FontFamily="OpenSans" FontWeight="Bold" FontSize="24" Foreground="white" BorderThickness="0" Margin="458,0,0,693" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="32" Click="Loginpage_close_button_click" RenderTransformOrigin="1.141,0.945" >
             <Button.Resources>
                 <Style TargetType="Border">
@@ -53,5 +37,8 @@
         </Button>
         <Image HorizontalAlignment="Center" Height="131" Margin="0,49,0,0" VerticalAlignment="Top" Width="124" Source="/login_image.png"/>
         <Label x:Name="register_label" Content="Нет аккаунта? Зарегистрироваться" HorizontalAlignment="Center" Margin="0,677,0,0" FontFamily="Open Sans" Foreground="#FF909090" RenderTransformOrigin="0.508,1.525" Height="24" VerticalAlignment="Top"  MouseDown="Registration_window_open"/>
+        <Label x:Name="login_label" Content="Логин" HorizontalAlignment="Left" FontSize="24" Margin="46,283,0,0" FontFamily="Open Sans" Foreground="#FF909090" RenderTransformOrigin="0.508,1.525" Height="38" VerticalAlignment="Top"  MouseDown="Registration_window_open" Width="89"/>
+        <Label x:Name="password_label" Content="Пароль" HorizontalAlignment="Left" FontSize="24" Margin="46,404,0,0" FontFamily="Open Sans" Foreground="#FF909090" RenderTransformOrigin="0.508,1.525" Height="38" VerticalAlignment="Top"  MouseDown="Registration_window_open" Width="99"/>
+        <Label x:Name="Account_label" Content="Account" MouseDown="AccountClick" Margin="226,698,226,10"></Label>
     </Grid>
 </Window>
