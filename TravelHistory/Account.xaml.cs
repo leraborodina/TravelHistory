@@ -23,5 +23,10 @@ namespace TravelHistory
         {
             InitializeComponent();
         }
+
+        private void MyTrips_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

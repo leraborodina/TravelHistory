@@ -15,7 +15,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label x:Name="registration_label" Margin="159,10,126,741" Content="Регистрация" FontFamily="Open Sans" FontSize="36" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
+        <Label x:Name="registration_label" Margin="159,10,126,758" Content="Регистрация" FontFamily="Open Sans" FontSize="36" FontWeight="Bold" Foreground="#FFCDA7DB"></Label>
         <Label Content="Имя" FontFamily="Open Sans" Foreground="#FF909090" FontSize="20" HorizontalAlignment="Left" Margin="43,79,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="registrationpage_firstname_textbox" Foreground="#303030" Height="53" BorderThickness="0" Margin="46,98,46,649" FontSize="20" FontFamily="open sans" Padding="15px">
             <TextBox.Effect>

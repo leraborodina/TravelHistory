@@ -55,9 +55,9 @@ namespace TravelHistory
 
             if(table.Rows.Count == 1)
             {
-                MessageBox.Show("Welcome!");
-                loginpage_login_textbox.Text = "";
-                loginpage_password_textbox.Password = "";
+                Account account = new Account();
+                account.Show();
+                this.Close();
             }
             else
             {
